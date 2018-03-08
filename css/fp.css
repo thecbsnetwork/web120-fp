@@ -1,0 +1,63 @@
+html {
+    background-color:mintcream;
+    font-family:'Raleway', sans-serif;
+}
+
+.header {
+    background-color:mintcream;
+    padding: 30px;
+    text-align: center;
+}
+
+.logo {
+    padding:.5em;
+}
+
+#stay-up {
+    display:inline-block;
+    max-width:40%;
+}
+
+#stay-up-title {
+    font-family: 'BioRhyme Expanded', serif;
+    text-shadow: 1px 1px #666;
+    margin-bottom: 20px;
+}
+
+#stay-up-sub {
+    font-family: 'BioRhyme', serif;
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.wrapper {
+    background-color:white;
+    margin:auto;
+    padding:1em;
+    width:80%;
+}
+
+h1 {
+    font-family: 'BioRhyme', serif;
+}
+
+footer {
+    clear:both;
+    text-align:center;
+    padding:1em;    
+}
+
+@media all and (max-width: 768px) {   
+    div.header div.wrapper img.logo {
+        margin:auto;
+        padding:0;
+        width:100%; 
+    }
+    
+    #stay-up {
+        margin:auto;
+        padding:0;
+        width:100%;
+        font-size:.75em;
+    }
+}
