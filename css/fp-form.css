@@ -1,0 +1,78 @@
+/*begin contact form styles*/
+
+form {
+    margin:auto;
+    align-content: center;
+}
+
+fieldset {
+    margin:10px auto;
+    padding:2em;
+    max-width:65%;
+}
+
+legend {
+    font-size:2em;
+    font-weight:900;
+    text-align: center;
+    padding:.5em;
+}
+
+label {
+    font-weight:700;
+    padding:5px;
+}
+
+input[type=text], [type=email] {
+    width:90%;
+    margin:auto;
+    font-size:1em;
+    padding:1em;
+}
+
+input [type=checkbox] {
+    width:75%;
+    font-size: 1.25em;
+    padding:.5em;
+}
+
+textarea {
+    width:90%;
+    margin:auto;
+}
+
+div.button {
+    text-align:center;
+    padding:3em;
+    color:#fffeee;
+    text-decoration: none;
+}
+
+button {
+    background-color:#cc0000;
+    border:2px solid #cc0000;
+    border-radius:3px;
+    color:#fffeee;
+    font-family:'Raleway';
+    font-size:20px;
+    font-weight:700;
+    padding:10px 20px;
+    display:inline-block;
+    margin:20px;
+}
+
+button:hover {
+    background-color:#ffffff;
+    border: 2px solid #cc0000;
+    color:#cc0000;
+}
+
+.button:hover {
+    color:#cc0000;
+}
+
+@media all and (max-width:615px) {
+    div.button {
+        padding:0;
+    }
+}

@@ -1,63 +1,256 @@
 html {
-    background-color:mintcream;
+    background-color:#fffeee;
     font-family:'Raleway', sans-serif;
+    background: url("../images/SULS-bg.jpg") no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    position: relative;
+    min-height: 100%;
+    width:100%;
+}
+
+body {
+    padding-bottom:150px;
+}
+
+
+a {
+    color:#cc0000;
+    text-decoration:underline;
+}
+
+a.button {
+    border: 2px solid #cc0000;
+    background-color:#cc0000;
+    color:#ffffff;
+    border-radius:3px;
+    padding:7px;
+    margin:5px;
+    text-decoration: none;
+}
+
+a.button:hover {
+    border:2px solid #cc0000;
+    background-color:#ffffff;
+    color:#cc0000;
+    border-radius:3px;
+    padding:7px;
+    margin:5px;
+    text-decoration: none;
+}
+
+#menu {
+    display:none;
+}
+
+.slicknav_menu {
+    display:none;
+}
+
+header {
+    min-height: 200px;
+    background-color:transparent;
+    overflow-x: hidden;
+    text-align: left;
 }
 
 .header {
-    background-color:mintcream;
-    padding: 30px;
-    text-align: center;
+    margin:auto;
+    float:left;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
 }
 
-.logo {
-    padding:.5em;
+.page-title {
+    font-family: 'Raleway', sans-serif;
+    font-size:25px;
+    color:#cc0000;
 }
 
-#stay-up {
-    display:inline-block;
-    max-width:40%;
+.page-title a {
+    text-decoration:none;
 }
 
-#stay-up-title {
-    font-family: 'BioRhyme Expanded', serif;
-    text-shadow: 1px 1px #666;
-    margin-bottom: 20px;
-}
-
-#stay-up-sub {
-    font-family: 'BioRhyme', serif;
-    font-size:30px;
-    margin-bottom:20px;
+.mobile-header {
+    display:none;
 }
 
 .wrapper {
-    background-color:white;
+    background-color:#ffffff;
+    width:80%;
     margin:auto;
     padding:1em;
-    width:80%;
+    overflow-y: scroll;
+    border-radius: 3px;
+}
+
+.wrapper-text {
+    font-size:16px;
+    line-height: 30px;
 }
 
 h1 {
     font-family: 'BioRhyme', serif;
+    color:#181111;
+    text-shadow: 1px 1px 1px #fff7f7;
+}
+
+#whats-next {
+    color:#cc0000;
+    font-weight:700;
+    font-size:20px;
 }
 
 footer {
-    clear:both;
-    text-align:center;
-    padding:1em;    
+    width:100%;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-evenly;
+    align-items:center;
+    background-color:transparent;
+    position: absolute;
+    bottom: 10px;
+    height: 100px;
 }
 
-@media all and (max-width: 768px) {   
-    div.header div.wrapper img.logo {
-        margin:auto;
-        padding:0;
-        width:100%; 
-    }
-    
-    #stay-up {
-        margin:auto;
-        padding:0;
-        width:100%;
-        font-size:.75em;
+img.shunpike {
+    vertical-align: middle;
+}
+
+.footer-text {
+    flex: 0 1 auto;
+    text-align:left;
+    display:block;
+    padding:1em;
+    color: #181111;
+    font-size:10px;  
+}
+
+a.footer-text-link {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color:#cc0000;
+    text-decoration:underline;
+}
+
+/*photos.php styling begins here*/
+.row {
+    margin: 4px -10px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 4px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 24%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 4px;
+}
+
+/*MEDIA QUERIES START HERE*/
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media all and (max-width: 900px) {
+    .column {
+        width: 50%;
     }
 }
+
+@media all and (max-width:768px) {
+    html {
+        background: #8c0006;
+    }
+    
+    header {
+        width:100%;
+        text-align:center;
+    }
+    
+    .header {
+        float:none;
+    }
+    
+    #header-logo {
+        display:inline-block;
+        margin: 0 auto;  
+        padding:0;
+    }
+    
+    .index-button {
+        display:block;
+    }
+    
+    footer {
+        justify-content: flex-start;
+    }
+    
+    .footer-text {
+        flex: 0 1 auto;
+        text-align:left;
+        display:block;
+        padding:1em;
+        color: #fffeee;
+        font-size:10px;  
+    }
+
+    a.footer-text-link {
+        color:#fffeee;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        color:#cc0000;
+        text-decoration:underline;
+    }
+}
+
+@media all and (max-width:615px) {
+    header {
+        padding-top:20px;
+        min-height:125px;
+    }
+    
+    #header-logo {   
+        width:100%;
+    }
+    
+    #nav {
+        display:none;
+    }
+    
+    .js #menu {
+		display:none;
+	}
+	
+	.js .slicknav_menu {
+		display:block;
+	}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media all and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+/*end photo.php*/
